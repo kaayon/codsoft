@@ -14,7 +14,7 @@ class InputHandler {
 
     String inputCurrency(String prompt) {
         System.out.print(prompt);
-        return sc.next().toUpperCase(); // uppercase for consistency
+        return sc.next().toUpperCase(); 
     }
 }
 
@@ -26,8 +26,8 @@ public class currency_converter {
         String baseCurrency = input.inputCurrency("Enter the base currency (e.g., USD, INR): ");
         String targetCurrency = input.inputCurrency("Enter the target currency (e.g., USD, INR): ");
 
-        // Your API key for Exchangerate-API v6
-        String API_KEY = "2e7d0d585a3c92a64ff9e8eb"; 
+        
+        String API_KEY = "your api key"; 
         String urlString = "https://v6.exchangerate-api.com/v6/" + API_KEY + "/latest/" + baseCurrency;
 
         try {
@@ -46,7 +46,7 @@ public class currency_converter {
 
             String res = response.toString();
 
-            // Quick way to extract the target rate from conversion_rates
+           
             String search = "\"" + targetCurrency + "\":";
             int index = res.indexOf(search);
             if (index == -1) {
