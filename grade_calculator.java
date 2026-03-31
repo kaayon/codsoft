@@ -16,12 +16,12 @@ class calc_grade {
     }
 
     void avg_percentage() {
-        double percentage = (english + maths + physics + chemistry) / 4;
+        double percentage = (english + maths + physics + chemistry);
         System.out.println("avg percentage = "+  percentage);
     }
 
     void assign_grade() {
-        double percentage = (english + maths + physics + chemistry) / 4;
+        double percentage = (english + maths + physics + chemistry);
 
         if (percentage >= 90) {
             System.out.println("Grade = A+");
