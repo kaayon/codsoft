@@ -26,8 +26,8 @@ public class currency_converter {
         String baseCurrency = input.inputCurrency("Enter the base currency (e.g., USD, INR): ");
         String targetCurrency = input.inputCurrency("Enter the target currency (e.g., USD, INR): ");
 
-        
-        String API_KEY = "your api key"; 
+      
+        String API_KEY = "YOUR API KEY"; 
         String urlString = "https://v6.exchangerate-api.com/v6/" + API_KEY + "/latest/" + baseCurrency;
 
         try {
@@ -46,7 +46,7 @@ public class currency_converter {
 
             String res = response.toString();
 
-           
+            
             String search = "\"" + targetCurrency + "\":";
             int index = res.indexOf(search);
             if (index == -1) {
@@ -56,7 +56,7 @@ public class currency_converter {
 
             int start = index + search.length();
             int end = res.indexOf(",", start);
-            if (end == -1) end = res.indexOf("}", start); // last element
+            if (end == -1) end = res.indexOf("}", start); 
 
             double rate = Double.parseDouble(res.substring(start, end));
             double convertedAmount = amount * rate;

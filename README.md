@@ -26,9 +26,18 @@ Each project focuses on building core programming skills such as logic building,
 
 ---
 
-### 3. Project 3 (In Progress)
+### 3. ATM Interface 💳 ✅
 
-- To be updated  
+- Menu-driven console application using `while` loop and `switch-case`  
+- Allows user to:
+  - Deposit money  
+  - Withdraw money  
+  - Check account balance  
+- Implements input validation (invalid amount, insufficient balance)  
+- Uses Object-Oriented Programming:
+  - `Account` class for balance logic  
+  - `ATM` class for user interaction  
+- Demonstrates clean separation of concerns (logic vs input handling)
 
 ---
 
@@ -37,6 +46,7 @@ Each project focuses on building core programming skills such as logic building,
 - Java  
 - HTTPURLConnection (for API requests)  
 - External API (ExchangeRate API)  
+- OOP Concepts (Classes, Objects, Methods)
 
 ---
 
@@ -44,7 +54,7 @@ Each project focuses on building core programming skills such as logic building,
 
 - ✔️ Project 1 Completed (Grade Calculator)  
 - ✔️ Project 2 Completed (Currency Converter)  
-- ⏳ Project 3 In Progress  
+- ✔️ Project 3 Completed (ATM Interface)  
 
 ---
 
@@ -53,3 +63,5 @@ Each project focuses on building core programming skills such as logic building,
 1. Clone the repository  
 2. Open in any Java IDE (VS Code / IntelliJ / Eclipse)  
 3. Compile the program:
+   ```bash
+   javac filename.java
